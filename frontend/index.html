@@ -18,25 +18,8 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      const paths = {
-          header: "/header.html",
-          sidebar: "/sidebar.html",
-          footer: "/footer.html"
-      };
-
       $(document).ready(function() {
-        // $.get(paths.header, function(data) {
-        //   $("#header-container").append(data);
-        // });
-
-        // $.get(paths.sidebar, function(data) {
-        //     $("#sidebar-container").append(data);
-        // });
-        // $.get(paths.footer, function(data) {
-        //     $("#footer-container").append(data);
-        // });
         $.getScript("/script.js");
-        // $.getScript("/components.js");
       });
     </script>
   </head>
@@ -60,13 +43,6 @@
       </div>
     </div>
     
-    <!-- <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        $.getScript("/script.js");
-        $.getScript("/components.js");
-      })
-    </script> -->
-    <!-- <script src="/script.js" defer></script> -->
     <script src="/components.js" defer type="module"></script>
   </body>
 </html>
