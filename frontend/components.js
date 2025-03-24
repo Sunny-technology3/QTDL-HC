@@ -87,8 +87,8 @@ const loadPageContent = (path) => {
             pageSpecificCss.href = "/utilities/register_project.css";
             break;
         case "/profile":
-            updatePage("/profile/profile_user.html", pageContent);
-            pageSpecificCss.href = "/profile/profile_user.css";
+            updatePage("/profiles/profile_user.html", pageContent);
+            pageSpecificCss.href = "/profiles/profile_user.css";
             break;
         default:
             pageContent.innerHTML = "<h1>Home Page</h1><p>Welcome to the home page.</p>";
