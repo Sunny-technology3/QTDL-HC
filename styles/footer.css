@@ -1,0 +1,8 @@
+.footer {
+    border-radius: 10px;
+    box-shadow: 2px 10px 20px #0003;
+    background-color: var(--second-color);
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}

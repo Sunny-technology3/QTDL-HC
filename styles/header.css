@@ -1,0 +1,103 @@
+:root {
+    --main-color: #BC2626;
+    --second-color: #ffffff;
+}
+
+.header {
+    background: transparent;
+    backdrop-filter: blur(50px);
+    color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+    width: 100%;
+    position: sticky;
+    align-self: start;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+    z-index: 500;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.faculty-name {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.system-name {
+    font-family: 'SF Pro Display';
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.ptit-logo {
+    margin: 0.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0.5rem;
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+body.dark {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.dark .header {
+    color: white;
+}
+
+.dark a {
+    color: var(--second-color);
+}
+
+.dark input {
+    color: white;
+    background: transparent;
+    border-color: #666;
+}
+
+.header {
+    position: sticky;
+    align-self: start;
+}
+
+.toggle-icon {
+    scale: 1.5;
+    fill: var(--main-color);
+}

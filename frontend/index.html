@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hệ thống quản trị tài liệu hành chính" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="/header.css" />
+    <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" href="/sidebar.css" />
+
+    <!-- CSS động cho từng trang sẽ được thêm vào đây -->
+    <link id="page-specific-css" rel="stylesheet" href="" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const paths = {
+          header: "/header.html",
+          sidebar: "/sidebar.html",
+          footer: "/footer.html"
+      };
+
+      $(document).ready(function() {
+        // $.get(paths.header, function(data) {
+        //   $("#header-container").append(data);
+        // });
+
+        // $.get(paths.sidebar, function(data) {
+        //     $("#sidebar-container").append(data);
+        // });
+        // $.get(paths.footer, function(data) {
+        //     $("#footer-container").append(data);
+        // });
+        $.getScript("/script.js");
+        // $.getScript("/components.js");
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- Header sẽ được nạp vào đây -->
+    <div id="header-container" class="header"></div>
+
+    <div class="main-content">
+      <!-- Nạp sidebar -->
+      <div id="sidebar-container" class="side-bar"></div>
+
+      <div class="content">
+        <div id="page-content" class="page-content">
+          <!-- Nạp nội dung trang -->
+          <div class="loading">Đang tải...</div>
+        </div>
+
+        <!-- Nạp footer -->
+        <div id="footer-container" class="footer"></div>
+      </div>
+    </div>
+    
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        $.getScript("/script.js");
+        $.getScript("/components.js");
+      })
+    </script> -->
+    <!-- <script src="/script.js" defer></script> -->
+    <script src="/components.js" defer type="module"></script>
+  </body>
+</html>

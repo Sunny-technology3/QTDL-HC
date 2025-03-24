@@ -1,0 +1,58 @@
+<ul>
+    <li>
+        <a href="/" data-page="home">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e"><path d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"/></svg>
+            <span>Trang chủ</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="/news" data-page="news">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e"><path d="M280-280q17 0 28.5-11.5T320-320q0-17-11.5-28.5T280-360q-17 0-28.5 11.5T240-320q0 17 11.5 28.5T280-280Zm-40-160h80v-240h-80v240Zm200 160h280v-80H440v80Zm0-160h280v-80H440v80Zm0-160h280v-80H440v80ZM160-120q-33 0-56.5-23.5T80-200v-560q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v560q0 33-23.5 56.5T800-120H160Z"/></svg>
+            <span>Tin tức</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="/notifications" data-page="notifications">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e"><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160ZM480-80q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80Z"/></svg>
+            <span>Thông báo</span>
+        </a>
+    </li>
+
+    <li class="">
+        <button onclick=toggleSubMenu(this) class="dropdown-button">
+            <svg class="dropdown"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e"><path d="M160-160q-33 0-56.5-23.5T80-240v-160h200v40h80v-40h240v40h80v-40h200v160q0 33-23.5 56.5T800-160H160ZM97-480l83-192q9-22 29-35t43-13h28v-40q0-33 23.5-56.5T360-840h240q33 0 56.5 23.5T680-760v40h28q23 0 43 13t29 35l83 192H680v-40h-80v40H360v-40h-80v40H97Zm263-240h240v-40H360v40Z"/></svg>
+            <span>Tiện ích</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg>
+        </button>
+
+        <ul class="sub-menu">
+            <div>
+                <li><a href="/dkDoan" data-page="dkDoan"><span>Đăng ký đồ án</span></a></li> 
+                <li><a href="/nDoan" data-page="nDoan"><span>Nộp đồ án</span></a></li>
+                <li><a href="/bcDoan" data-page="bcDoan"><span>Báo cáo đồ án</span></a></li>
+                <li><a href="/dkNCkh" data-page="dkNCkh"><span>Đăng ký đề tài NCKH</span></a></li>
+                <li><a href="/bcNCkh" data-page="bcNCkh"><span>Báo cáo đề tài NCKH</span></a></li>
+            </div>
+        </ul>
+    </li>
+
+    <li>
+        <a href="/profile" data-page="profile">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e"><path d="M560-440h200v-80H560v80Zm0-120h200v-80H560v80ZM200-320h320v-22q0-45-44-71.5T360-440q-72 0-116 26.5T200-342v22Zm160-160q33 0 56.5-23.5T440-560q0-33-23.5-56.5T360-640q-33 0-56.5 23.5T280-560q0 33 23.5 56.5T360-480ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Z"/></svg>
+            <span>Thông tin cá nhân</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="/settings" data-page="settings">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm112-260q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Z"/></svg>
+            <span>Cài đặt</span>
+        </a>
+    </li>
+</ul>
+
+<button id="collapse-button" onclick=toggleSidebar() class="collapse-sidebar-button">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M460-320v-320L300-480l160 160ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm360-80v-560H200v560h360Z"/></svg>
+</button>
