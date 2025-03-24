@@ -1,4 +1,3 @@
-<div class="alignment"></div>
 <div class="wrapper">
     <div class="profile_user">
         <h1 class="public_setting">Cấu hình chung</h1>
@@ -20,8 +19,8 @@
                     <p class="setting_account">Cai dat tai khoan</p>
                     <table class="begin_user">
                         <tr>
-                            <td class="text_user">Anh dai dien</td>
-                            <td class="user_ten">kadbfhsd</td>
+                            <td class="text_user_img">Anh dai dien</td>
+                            <td class="user_img"><img src="/avatar.jpg" alt=""></td>
                         </tr>
                         <tr>
                             <td class="text_user">Ten</td>
@@ -29,44 +28,42 @@
                         </tr>
                     </table>
                 </div>
-                <div class="update_profile">
-                    <p class="update_account">Cap nhat thong tin</p>
-                    <table class="body_user">
-                        <tr class="birthday_user">
-                            <td>Ngay sinh *</td>
-                            <td><input type="text" placeholder="Nhap ngay sinh"></td>
-                        </tr>
-                        <tr class="gender_user">
-                            <td>Gioi tinh *</td>
-                            <td><select name="gender" id="gender">
-                                <option value="nam">Nam</option>
-                                <option value="nu">Nu</option>
-                            </select></td>
-                        </tr>
-                        <tr class="email_user">
-                            <td>Email</td>
-                            <td><input type="text" ></td>
-                        </tr>
-                        <tr class="phone_user">
-                            <td>SDT</td>
-                            <td><input type="text" ></td>
-                        </tr>
-                        <tr class="cccd_user">
-                            <td>CCCD</td>
-                            <td><input type="number" ></td>
-                        </tr>
-                        <tr class="address_user">
-                            <td>Noi cu tru</td>
-                            <td><textarea id="message" name="message" rows="4" cols="50" placeholder="Nhập mô tả"
-                                required></textarea></td>
-                        </tr>
-                        <tr class="intro_user">
-                            <td>Gioi thieu</td>
-                            <td><textarea id="message" name="message" rows="4" cols="50" placeholder="Nhập gioi thieu"
-                                required></textarea></td>
-                        </tr>
-                    </table>
-                </div>
+                <table class="body_user">
+                    <p>Cap nhat tai khoan</p>
+                    <tr class="birthday_user">
+                        <td>Ngay sinh *</td>
+                        <td class="user_input"><input type="date"></td>
+                    </tr>
+                    <tr class="gender_user">
+                        <td>Gioi tinh *</td>
+                        <td><select name="gender" id="gender">
+                            <option value="nam">Nam</option>
+                            <option value="nu">Nu</option>
+                        </select></td>
+                    </tr>
+                    <tr class="email_user">
+                        <td>Email</td>
+                        <td><input type="email" ></td>
+                    </tr>
+                    <tr class="phone_user">
+                        <td>SDT</td>
+                        <td><input type="text" ></td>
+                    </tr>
+                    <tr class="cccd_user">
+                        <td>CCCD</td>
+                        <td><input type="text" ></td>
+                    </tr>
+                    <tr class="address_user">
+                        <td>Noi cu tru</td>
+                        <td><textarea id="address_text" name="message" rows="4" cols="50" placeholder="Nhập mô tả"
+                            required></textarea></td>
+                    </tr>
+                    <tr class="intro_user">
+                        <td>Gioi thieu</td>
+                        <td><textarea id="intro_text" name="message" rows="4" cols="50" placeholder="Nhập gioi thieu"
+                            required></textarea></td>
+                    </tr>
+                </table>
                 <button type="submit" value class="update_btn" >Cap nhat</button>
             </form>
         </div>
